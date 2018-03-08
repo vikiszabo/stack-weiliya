@@ -14,6 +14,8 @@ public class Main {
         myStack.push(8);
         myStack.push(9);
         myStack.push(10);
+     //   myStack.push(11);
+        myStack.pop();
         myStack.pop();
         myStack.peek();
 

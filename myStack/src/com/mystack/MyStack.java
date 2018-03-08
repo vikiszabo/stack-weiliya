@@ -21,7 +21,7 @@ public class MyStack<X> {
    // throw an exception when the stack is full and I want to add one more item
     public void push(X newItem){
         if(index >= size){
-            throw new IllegalArgumentException("Full stack");
+            throw new IndexOutOfBoundsException("Full stack");
         } else {
             items[index++] = newItem;
         }
@@ -42,7 +42,7 @@ public class MyStack<X> {
         if(index <= size) {
             return items[index - 1];
         }
-        throw new IllegalArgumentException("No peek");
+        return null;
     }
 
     // I want to be able to get the size of the stack (I mean the maximum capacity)
